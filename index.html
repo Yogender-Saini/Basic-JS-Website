@@ -21,16 +21,37 @@
     <script>
         function hello()
         {
-            console.log("Hello, world");
+            console.log("Hello, Zaid");
         }
+
+        function color()
+{
+    var userinput = prompt("color")
+    document.getElementById("chair").style.backgroundColor= userinput;
+    console.log("Does it work?");
+}
+
+
     </script>
 </head>
 <body>
+    <h1 id = "chair" style="background-color:userinput">Heading</h1>
+    <p> Click <a href="#" onclick="color();";> here</a>"to change color</p>
     <h1 style="background-color:blue">This is a heading</h1>
     <p>This is a paragraph. </p>
-    <p>Click <a href="http://google.com">here</a> to visit Google.</p>
-    <button type="button" class="btn btn-primary">This is a bootstrap button</button>
-    <a href="https://getbootstrap.com/" class="btn btn-primary">This is a link that looks like a button.</a>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "The purpose of life is to be happy."'>Don't click me</button>
+
 
 </body>
 </html>
+
+
+
+
+
+
+</body>
+</html>
+
