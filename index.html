@@ -18,6 +18,23 @@
         }
     </style>
 
+<!--addition -->
+<script type="text/javascript">
+    function addition(){
+// static number
+// prompt () ;
+let a = prompt ("Please enter first number", "");
+let b  = prompt ("Please enter second number", "");
+var c = parseInt (a) + parseInt (b) ;
+// The sum of 5 and 6 is 11
+console.log("The sum of "+a+" and "+b+" is: "+c);
+
+}
+</script>
+
+
+
+
     <script>
         function hello()
         {
@@ -33,12 +50,21 @@
 
 
     </script>
+
+                
+
+
+</script>
+
+
 </head>
 <body>
     <h1 id = "chair" style="background-color:userinput">Heading</h1>
     <p> Click <a href="#" onclick="color();";> here</a>"to change color</p>
-    <h1 style="background-color:blue">This is a heading</h1>
-    <p>This is a paragraph. </p>
+    Math Things. 
+    <p> Click <a href="#" onclick="addition();";> here</a>"Addition</p>
+
+
 
     <p id="demo">JavaScript can change HTML content.</p>
     <button type="button" onclick='document.getElementById("demo").innerHTML = "The purpose of life is to be happy."'>Don't click me</button>
