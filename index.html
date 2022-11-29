@@ -18,7 +18,7 @@
         }
     </style>
 
-<!--addition -->
+<!--start of math calculations -->
 <script type="text/javascript">
     function addition(){
 // static number
@@ -26,16 +26,58 @@
 let a = prompt ("Please enter first number", "");
 let b  = prompt ("Please enter second number", "");
 var c = parseInt (a) + parseInt (b) ;
-// The sum of 5 and 6 is 11
-console.log("The sum of "+a+" and "+b+" is: "+c);
+document.getElementById("answer").innerHTML= "The sum of "+a+" and "+b+" is: "+c;
 
 }
+
 </script>
 
+<script type = "text/javascript">
+function subtraction (){
+
+    let a = prompt ("Please enter first number", "");
+    let b  = prompt ("Please enter second number", "");
+    var c = parseInt (a) -  parseInt (b) ; 
+
+    document.getElementById("answer").innerHTML= "The sum of "+a+" and "+b+" is: "+c;
 
 
+}
 
-    <script>
+</script>
+
+</script>
+
+<script type = "text/javascript">
+function multiplication (){
+
+    let a = prompt ("Please enter first number", "");
+    let b  = prompt ("Please enter second number", "");
+    var c = parseInt (a) *  parseInt (b) ; 
+
+    document.getElementById("answer").innerHTML= "The sum of "+a+" and "+b+" is: "+c;
+
+
+}
+
+</script>
+
+<script type = "text/javascript">
+function Division (){
+    
+    let a = prompt ("Please enter first number", "");
+    let b  = prompt ("Please enter second number", "");
+    var c = parseInt (a) /  parseInt (b) ; 
+    
+        document.getElementById("answer").innerHTML= "The sum of "+a+" and "+b+" is: "+c;
+    
+    
+ }
+</script>
+<!--  End of math caulcuations -->
+
+
+<script>
         function hello()
         {
             console.log("Hello, Zaid");
@@ -48,22 +90,30 @@ console.log("The sum of "+a+" and "+b+" is: "+c);
     console.log("Does it work?");
 }
 
-
-    </script>
+</script>
 
                 
 
 
-</script>
+
+
+
 
 
 </head>
 <body>
     <h1 id = "chair" style="background-color:userinput">Heading</h1>
     <p> Click <a href="#" onclick="color();";> here</a>"to change color</p>
-    Math Things. 
-    <p> Click <a href="#" onclick="addition();";> here</a>"Addition</p>
 
+
+    <h1 id = "answer" style="background-color:blue">Math Answers</h1>
+    <p> Click <a href="#" onclick="addition();";> here</a> Addition</p>
+
+    <p> Click <a href="#" onclick="subtraction();";> here</a> subtraction</p>
+
+    <p> Click <a href="#" onclick="multiplication();";> here</a> Multiplication</p>
+
+    <p> Click <a href="#" onclick="Division();";> here</a> Division</p>
 
 
     <p id="demo">JavaScript can change HTML content.</p>
